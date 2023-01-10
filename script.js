@@ -3,6 +3,7 @@ const loginTitle = document.getElementById("loginTitle");
 const loginStatus = localStorage.getItem("loginStatus");
 const forgotPassword = document.getElementById("forgotPassword");
 
+/*i ovanstående använder vi inloggningsfunktionerna, och nu förbereder vi koden som om användarnamnet och lösenordet är korrekt ger välkomstmeddelandet.*/
 function checkLoginStatus() {
     if (loginStatus == "true") {
         hideHTMLTag("username");
@@ -13,11 +14,11 @@ function checkLoginStatus() {
         loginTitle.innerHTML = "Välkommen,du är nu inloggad!";
     }
 }
-
+/*för att byta mellan användarnamn och lösenordsfält till välkomst- eller felmeddelanden.*/
 function hideHTMLTag(id) {
     document.getElementById(id).style.display = "none";
 }
-
+/*Användaren loggar in data som sparats i LocalStorage, och om loggning info är fel ger felmeddelandet*/
 checkLoginStatus();
 
 loginBtn.onclick = function () {

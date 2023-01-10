@@ -3,19 +3,19 @@
     margin: 0;
     padding: 0;
 }
-
+/*lägga till bakgrunden, och välja typsnitt*/
 body {
     background-color: rgb(196, 236, 250);
     background-image: url("water.jpg");
     font-family: "Lucida Console", "Courier New", monospace;
 }
-
+/*typsnitt och storlek på rubriken*/
 #title {
     font-size: 40px;
     font-family: Copperplate, Papyrus, fantasy;
     padding: 20px 10px 20px;
 }
-
+/*Lägga till bakgrunden till sidhuvudet, göra det transparent och välja färg och storlek.*/
 .hero {
     width: 100%;
     background-color: rgb(130, 192, 213);
@@ -23,7 +23,7 @@ body {
     background-size: cover;
     background-blend-mode: lighten;
 }
-
+/*storlet av sidan*/
 .flexbox {
     display: flex;
     flex-direction: column;
@@ -34,9 +34,10 @@ body {
     min-height: 100%;
 }
 
+/*Specifikation av ¨Regler och lagar¨ utrymme*/
 .rules {
     background-color: rgb(103, 89, 194);
-    border-radius: 24px;
+    border-radius: 5px;
     width: 880px;
     padding: 16px;
 
@@ -46,16 +47,16 @@ body {
     align-items: center;
     flex: 1;
 }
-
+/*Specifikation av ¨Regler och lagar¨ text*/
 .rules p {
     font-size: 14px;
     text-align: center;
     margin-top: 20px;
 }
-
+/*Specifikation av loggning in utrymme*/
 .label {
     background-color: aliceblue;
-    border-radius: 30px;
+    border-radius: 5px;
     height: 320px;
     width: 540px;
     margin-top: 20px;
@@ -66,16 +67,16 @@ body {
     align-items: center;
     gap: 8px;
 }
-
+/*för att göra inloggningstiteln med versaler (uppercase)*/
 #loginForm h1 {
     text-transform: uppercase;
 }
-
+/*Storleken och färgen av ¨Glömt lösenord?¨ */
 #forgotPassword {
     font-size: 12px;
     color: #000000;
 }
-
+/*Specifikation av sidfoten*/
 footer {
     position: fixed;
     bottom: 0;
@@ -87,7 +88,7 @@ footer {
     justify-content: center;
     
  }
-
+/*Kontakta oss typsnitt, */
 .contact-information {
     font-size: 22px;
     color: rgb(0, 0, 0);
@@ -95,18 +96,7 @@ footer {
     margin-top: 3%;
 }
 
-.contact-items {
-    margin: 0.1rem;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-}
-
-.contact-items a {
-    font-size: 14px;
-    color: rgb(0, 0, 0);
-    
-}
-
+/*logga in box stil */
 #loginForm input[type="user"],
 #loginForm input[type="password"] {
     border: 3px solid rgb(26, 96, 154);
@@ -119,7 +109,7 @@ footer {
     width: 220px;
     outline: none;
 }
-
+/*logga in box stil*/
 #loginForm input[type="user"]:focus,
 #loginForm input[type="password"]:focus {
     border-color: rgb(16, 105, 105);
@@ -128,7 +118,7 @@ footer {
 #loginBtn:active {
     box-shadow: 2px 2px 6px #02034f;
 }
-
+/*logga in knap stil*/
 #loginBtn,
 .newButton {
     border: 3px solid rgb(54, 136, 172);
@@ -143,7 +133,7 @@ footer {
     cursor: pointer;
     outline: none;
 }
-
+/*att byta knapp färgen*/
 #loginBtn:hover {
     background: rgb(66, 166, 209);
     color: white;
